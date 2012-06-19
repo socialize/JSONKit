@@ -3,5 +3,6 @@
 //
 
 #ifdef __OBJC__
-    #import <Foundation/Foundation.h>
+#import "hide_symbols_jsonkit.h"
+#import <Foundation/Foundation.h>
 #endif

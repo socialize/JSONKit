@@ -107,7 +107,7 @@
 #include <limits.h>
 #include <objc/runtime.h>
 
-#import "JSONKit.h"
+#import <JSONKit/JSONKit.h>
 
 //#include <CoreFoundation/CoreFoundation.h>
 #include <CoreFoundation/CFString.h>
@@ -634,13 +634,18 @@ static NSNumberInitWithUnsignedLongLongImp _jk_NSNumberInitWithUnsignedLongLongI
 
 extern void jk_collectionClassLoadTimeInitialization(void) __attribute__ ((constructor));
 
+#define xstr(s) str(s)
+#define str(s) #s
+
 void jk_collectionClassLoadTimeInitialization(void) {
   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init]; // Though technically not required, the run time environment at load time initialization may be less than ideal.
   
-  _JKArrayClass             = objc_getClass("JKArray");
-  _JKArrayInstanceSize      = jk_max(16UL, class_getInstanceSize(_JKArrayClass));
+    _JKArrayClass             = objc_getClass(xstr(JKArray));
+    
+    _JKArrayInstanceSize      = jk_max(16UL, class_getInstanceSize(_JKArrayClass));
   
-  _JKDictionaryClass        = objc_getClass("JKDictionary");
+    _JKDictionaryClass        = objc_getClass(xstr(JKDictionary));
+    
   _JKDictionaryInstanceSize = jk_max(16UL, class_getInstanceSize(_JKDictionaryClass));
   
   // For JSONDecoder...
