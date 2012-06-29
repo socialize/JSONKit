@@ -10,7 +10,7 @@
 		AA8766EE1590322900E9B2C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8766ED1590322900E9B2C1 /* Foundation.framework */; };
 		AA876706159032BD00E9B2C1 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA876704159032BD00E9B2C1 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA876707159032BD00E9B2C1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AA876705159032BD00E9B2C1 /* JSONKit.m */; };
-		AA87676F159034AB00E9B2C1 /* hide_symbols_jsonkit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA87676E159034AB00E9B2C1 /* hide_symbols_jsonkit.h */; };
+		AA87676F159034AB00E9B2C1 /* hide_symbols_jsonkit.h in Headers */ = {isa = PBXBuildFile; fileRef = AA87676E159034AB00E9B2C1 /* hide_symbols_jsonkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
