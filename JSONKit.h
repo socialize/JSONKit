@@ -53,8 +53,6 @@
  limitations under the License.
 */
 
-#import "hide_symbols_jsonkit.h"
-
 #include <stddef.h>
 #include <stdint.h>
 #include <limits.h>

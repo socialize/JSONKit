@@ -107,8 +107,7 @@
 #include <limits.h>
 #include <objc/runtime.h>
 
-#import <JSONKit/JSONKit.h>
-
+#import "JSONKit.h"
 //#include <CoreFoundation/CoreFoundation.h>
 #include <CoreFoundation/CFString.h>
 #include <CoreFoundation/CFArray.h>
